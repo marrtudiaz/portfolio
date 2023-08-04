@@ -1,0 +1,62 @@
+.contact-section {
+    margin-left:15%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-cv {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact {
+    background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding:5%;
+}
+
+
+.contact-details p {
+    font-size: 20px;
+    color:rgb(202, 202, 202);
+
+}
+.contact-details h4 {
+    color:rgb(202, 202, 202);
+    font-size:30px;
+    margin:10%;
+}
+
+.contact-details i {
+    color:rgba(255, 255, 255, 0.882);
+    font-size: 30px;
+}
+
+.download-cv button {
+    color:rgb(21, 21, 21);
+    background-color:rgba(255, 255, 255, 0.81);
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+.download-cv button:hover {
+    background-color:rgb(118, 118, 118);
+    color:rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) { 
+.contact-section{
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.download-cv button {
+    margin-top:20%;
+    font-size: 20px;
+
+}
+}

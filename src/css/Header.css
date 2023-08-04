@@ -1,0 +1,184 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.change-theme {
+  display: flex;
+  justify-content: flex-end;
+  padding:10px;
+}
+.change-theme button {
+  background-color:white;
+  padding:10px;
+  margin-right:2%;
+  flex-direction:row;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(66, 66, 66, 0.11);
+  color:#000;
+}
+.change-theme button:hover {
+  background: #727272;
+  cursor:pointer;
+}
+.searchLogo {
+  display:flex;
+  margin:auto;
+  text-align:center;
+}
+
+.history-search h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  margin-bottom: 0;
+}
+
+.history-search h1 span:nth-child(1) {
+  color: rgba(0, 0, 255, 0.675);
+}
+.history-search h1 span:nth-child(2) {
+  color: rgba(255, 0, 0, 0.675);
+}
+.history-search h1 span:nth-child(3) {
+  color: rgba(255, 204, 0, 0.675);
+}
+.history-search h1 span:nth-child(4) {
+  color:  rgba(0, 0, 255, 0.675);
+}
+.history-search h1 span:nth-child(5) {
+  color: rgba(0, 128, 0, 0.675);
+}
+
+/* Estilos para el contenedor principal */
+.example, .history-search h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Añadimos posición relativa para alinear el menú desplegable */
+  }
+  
+  .example input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0px;
+    float: left;
+    width: 30%;
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin:5px;
+    box-shadow: 3px 2px rgba(66, 66, 66, 0.11);
+  }
+  
+  .example button {
+    float: left;
+    width: 2%;
+    padding: 8px;
+    background: #b6b5b4;
+    color: white;
+    font-size: 17px;
+    border: 1px solid rgb(162, 162, 162);
+    border-left: none;
+    cursor: pointer;
+    border-radius: 40%;
+    margin:4px;
+  }
+  
+  .example button:hover {
+    background: #b4d9f7;
+  }
+  
+  .example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    top: 100%; /* Posición debajo del input */
+    width: 40%; /* Mismo ancho que el contenedor principal */
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    padding: 12px 16px;
+    
+  } 
+  /* Ajustar el ancho de los enlaces del menú desplegable */
+  .dropdown-content ul {
+    list-style: none;
+    padding: 0;
+   
+  }
+  
+  /* Mostrar el menú desplegable al hacer hover en el contenedor principal */
+  .example:hover .dropdown-content {
+    display: flex;
+
+  
+  }
+ 
+  .bx.bx-history {
+    color: #000;
+    margin: 5px;
+    
+}
+.trends {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: #f8f7f4dd;
+  width: fit-content;
+  padding-left:10%;
+  padding-right:10%;
+  box-shadow: 2px 2px rgba(115, 115, 115, 0.649);
+  margin-top:8%;
+  border-radius: 2%;
+}
+
+.trend-items {
+  border-bottom: 1px solid grey;
+  width: 100%;
+  margin: 5px;
+  font-family: 'Montserrat',sans-serif;
+}
+.bx.bx-trending-up {
+  margin:5px;
+}
+.trends p {
+  font-size: 20px
+}
+.trends h4 {
+  font-size:25px;
+  color:#000;
+}
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+    /* Cuando el ancho de la pantalla sea de 768px o menor */
+ .example input[type="text"] {
+  width: 50%;
+ }
+
+ .example button {
+  width: 15%;
+  }
+  img {
+    display: none;
+  }
+  .dropdown-content{
+    width:80%;
+  }
+
+  .trends {
+    margin-top:35%;
+  }
+  .history-search {
+    margin-top:10%;
+  }
+  
+}

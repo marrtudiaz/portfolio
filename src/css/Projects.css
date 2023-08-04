@@ -1,0 +1,111 @@
+
+  .projects-container {
+margin:30px;
+background-color: rgba(251, 251, 251, 0.649);
+margin-top: 0;
+cursor: pointer;
+  }
+
+.flip-card-inner{
+  
+  margin:5px;
+  align-items: 'center';
+}
+.flip-card-inner h5 {
+  font-family: "Montserrat";
+  font-size: 25px;
+  color:rgba(0, 0, 0, 0.751);
+}
+  .projectsText {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    padding: 20px;
+  }
+.container {
+  margin:auto;
+}
+  .projectsText p {
+    font-size:30px;
+    margin:2%;
+  }
+
+  .projectsText h4 {
+    font-size:40px;
+    color:rgba(0, 0, 0, 0.751);
+  }
+.single-card button {
+  background-color:white;
+  padding:10px;
+  margin-right:2%;
+  flex-direction:row;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(66, 66, 66, 0.11);
+  color:#000;
+}
+
+  .projects {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+  }
+
+.card img {
+    width: 50%;
+    display: block;
+    border:2px solid #fff;
+    border-radius:6px;
+   
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    transition:all ease-in-out 0.2s;
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay:0.2s;
+}
+
+.card .back {
+    transition:all ease-in 0.2s;
+    transition-delay:0.2s;
+
+}
+
+.flipped .back {
+    transform:rotateY(90deg);
+    transition-delay:0s;
+}
+
+.info {
+  display: flex;
+  flex-direction:column;
+}
+
+.textOff {
+  display: none;
+}
+
+.textOn {
+  display:flex;
+  
+}
+
+@media (max-width: 768px) {
+ .projects {
+  flex-wrap: wrap;
+ }
+ .single-card {
+  margin:5%;
+ }
+ .projectsText {
+  font-size:10px;
+
+  
+  font-weight: normal;
+ }
+}
