@@ -7,6 +7,7 @@
     border-top: 1px solid black;
     background-image:linear-gradient(60deg, #29323c 0%, #485563 100%);
     justify-content: space-between;
+    width: auto;;
 }
 
 .download button {
@@ -15,9 +16,15 @@
     padding:15px;
     border-radius: 5px;
     cursor: pointer;
+    
 }
-
+.download button:hover {
+    background: #727272;
+}
 .footer i {
     font-size:30px;
     color:white;
+}
+.footer i:hover {
+    color: #727272;
 }

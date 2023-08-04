@@ -33,7 +33,8 @@ const About = () => {
           border: '1px solid #ccc',boxShadow:2}} /> 
             <div className="about-text">
            
-<p className={showText ? 'animatedText' : ''}>{showText && "Hello, everyone! I'm Martina, a dedicated and ambitious software development student. My passion for programming drives me to achieve my goals and make a meaningful impact in this dynamic field. Today, I'm thrilled to share my journey as I work towards landing my first job in the IT industry."}</p>
+<p className={showText ? 'animatedText' : ''}>{showText &&
+ "Hi! I'm Martina, a dedicated and ambitious software development student. I want to achieve my goals and make a meaningful impact in this field. I'm thrilled to share my journey as I work towards landing my first job in the IT industry."}</p>
            
             
             </div>
