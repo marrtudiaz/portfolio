@@ -37,13 +37,16 @@ cursor: pointer;
 .single-card button {
   background-color:white;
   padding:10px;
-  margin-right:2%;
+ 
   flex-direction:row;
   border-radius: 5px;
   box-shadow: 2px 2px rgba(66, 66, 66, 0.11);
   color:#000;
-}
 
+}
+.single-card a {
+  margin-right:5%;
+}
   .projects {
     display: flex;
     flex-direction:row;
