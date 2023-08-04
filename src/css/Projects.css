@@ -61,8 +61,7 @@ height: '100vh';
     text-align: center;
     display: flex;
    flex-wrap: wrap;
-   padding-left:5%;
-   padding-right:5%;
+   
   }
 
 .card img {
