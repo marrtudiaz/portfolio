@@ -74,6 +74,7 @@ const Projects = () => {
             about='This Web Page was made for a college project, about a circus with Login (access token). I used php to do an MVC pattern and MySQL to store the data.' project={links[3]} />
             <Card onClick={() => setFlipped5(!isFlipped5)} srcFront={ImgGuessGame} srcBack={LogoHtmlCssJsApi} isFlipped={isFlipped5}  titulo={'Guess Game'}
             about='This is a guess game. I used an API that change the order of the letters in a word and the player has to guess the whole phrase in a given time.' project={links[4]}/>
+          
           </div>
         </div>
       </div>

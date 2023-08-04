@@ -5,6 +5,7 @@ background-color: rgba(251, 251, 251, 0.649);
 margin-top: 0;
 cursor: pointer;
 height: '100vh';
+
   }
 
 .flip-card-inner{
@@ -58,7 +59,10 @@ height: '100vh';
     flex-direction:row;
     justify-content: center;
     text-align: center;
-    padding:40px;
+    display: flex;
+   flex-wrap: wrap;
+   padding-left:10%;
+   padding-right:10%;
   }
 
 .card img {
